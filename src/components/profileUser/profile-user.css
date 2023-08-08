@@ -1,0 +1,51 @@
+.profile-user{
+   margin-top: 3rem;
+   font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.profile-user-form .form-sec{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 1rem;
+}
+.profile-user-form .form-sec input {
+    margin-bottom: 1rem;
+    width: 25vw;
+}
+.profile-user-form button {
+    background-color: black;
+    color: white;
+    width: 20vw;
+    padding: 0.3rem;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .profile-user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-user-form .form-sec{
+        gap: .5rem;
+    }
+    .profile-user-form .form-sec input {
+        margin-bottom: 1rem;
+        width: 60vw;
+    }
+    .profile-user-form button {
+        font-size: 15px;
+        margin-bottom: 2rem;
+        width: 60vw;
+        margin-top:1rem;
+    }
+    .profile-user-form .form-sec label {
+        font-size: 12px;
+    }
+}

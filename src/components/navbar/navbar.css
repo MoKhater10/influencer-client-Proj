@@ -1,0 +1,213 @@
+.navbar-parent {
+    padding: 1rem 2rem;
+}
+.navbar {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.navbar .navbar-icon{
+    width: 5%;
+}
+.navbar .toogle-icon {
+    cursor: pointer;
+    font-size: 45px;
+}
+.navbar .navbar-profile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.navbar .navbar-profile .profile{
+    width: 40%;
+}
+.navbar .navbar-profile .arrow{
+    font-size: 30px;
+    color: #909090;
+}
+.navbar-parent hr.hr {
+    width: 96.5%;
+    margin-top: .5rem;
+    color:#000000
+}
+.div-hr{
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+}
+.navbar .navbar-logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .navbar-logo .navbar-logo-img{
+    width: 100%;
+}
+.dropdown {
+    position: fixed;
+    right: -317px;
+    top: 0;
+    background-color: #fff;
+    width: 250px;
+    z-index: 1000;
+    min-height: 100vh;
+    transition: all 0.3s;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: -1px 6px 3px 3px rgb(2 2 24 / 41%); 
+}
+.dropdown-close{
+    right: -317px;
+}
+.dropdown-open{
+    right: 0;
+}
+.dropdown .titles{
+    margin-top: 10rem;
+}
+.close-icon{
+    position: absolute;
+    left: -1px;
+    top: 0;
+    background-color: var(--primaryColor);
+    padding: 0.5rem;
+    border-radius: .4rem;   
+    cursor: pointer;
+    width: 3rem;
+    font-size: 45px;
+}
+.dropdown h1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 56px;
+    padding: .5rem;
+    cursor: pointer;
+}
+.dropdown h1{
+    width: fit-content;
+    margin: auto;
+}
+.dropdown .titles a.title-setting  h1{
+    background-color: var(--primaryColor);
+    border-radius: 1rem;
+}
+
+.dropdown-parent {
+    position: relative;
+}
+a{
+    color: black;
+}
+.drop-setting{
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 195px;
+    top: 4.5rem;
+    left: 0;
+    z-index: 100;
+    padding: 2rem;
+    border: 1px solid #B1B1B1;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2rem;
+}
+.drop-setting .user-info{
+    text-align: center;
+}
+.drop-setting .user-info h6 {
+    margin-top: 1rem;
+}
+.drop-setting .logout-div{
+    margin-top: .5rem;
+    display: flex;
+    gap: .7rem;
+    align-items: center;
+}
+@media only screen and (max-width: 992px) {
+    .dropdown-parent .dropdown h1{
+        font-size: 18px;
+    }
+    .drop-setting{
+        top: 3.5rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar-parent {
+        padding: 1rem 0rem;
+    }
+    .navbar{
+        padding: 1rem;
+    }
+    .dropdown-parent .dropdown h1{
+        font-size: 13px;
+        padding: 0;
+    }
+    .drop-setting{
+        top: 2rem;
+        width: 200px;
+    }
+    .user-info img {
+        width: 45px;
+        height: 43px;
+    }
+    .logout-div span {
+        font-size: 14px;
+    }
+    .logout-div img {
+        width: 2rem;
+        height: 2rem;
+    }
+    .navbar .navbar-profile .arrow {
+        font-size: 17px;
+    }
+    .navbar .navbar-profile .profile{
+        width: 20%;
+    }
+    .navbar-parent hr {
+        margin-top: 1rem;
+    }
+    .navbar-parent hr.hr{
+        margin-top: 1rem;
+    }
+    .navbar .navbar-profile{
+        justify-content: flex-end;
+        gap: .3rem;
+    }
+    .navbar .navbar-icon {
+        width: 28%;
+    }
+    .navbar{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .navbar .navbar-logo {
+        width: 40%;
+        margin: auto;
+    }
+    .close-icon{
+        width: 2.5rem;
+    }
+    .dropdown .titles{
+        margin-top: 5rem;
+    }
+    .dropdown .titles h1{
+        font-size: 13px;
+        padding: 0.6rem;
+    }
+    .navbar .toogle-icon {
+        font-size: 26px;
+    }
+    .dropdown {
+        width: 180px;
+    }
+}

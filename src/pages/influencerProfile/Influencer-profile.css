@@ -1,0 +1,159 @@
+.influencer-profile {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    position: relative;
+    margin-top: -5rem;
+}
+.influencer-profile .titles .title-name {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 94px;
+}
+.influencer-profile .titles .title-follower {
+    background-color: var(--primaryColor);
+    width: fit-content;
+    padding: .5rem;
+    font-size: 67px;
+    font-weight: 600;
+    line-height: 94px;
+}
+.influencer-profile .titles .title-follow{
+    font-size: 67px;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.influencer-profile .social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.influencer-profile .add-btn  {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+}
+.influencer-profile .add-btn  .addIcon {
+    color: var(--primaryColor);
+    font-size: 40px;
+}
+
+.influencer-profile .images .influencer-explore {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 1;
+    width: 16%;
+    transform: rotate(-80deg);
+}
+
+.influencer-profile .images .influencer-img .girl {
+    position: absolute;
+    left: 46px;
+    bottom: 0;
+    width: 47%;
+    height: 80%;
+    border-radius: 20px 20px 0 0;
+}
+
+.influencer-profile .influencer-profile-des{
+    margin-top: 11rem ;
+}
+
+@media only screen and (max-width: 992px) {
+    .influencer-profile .titles .title-name {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .influencer-profile .titles .title-follower {
+        font-size: 30px;
+        line-height: 46px;
+    }
+    .influencer-profile .titles .title-follow {
+        font-size: 27px;
+    }
+    .influencer-profile .add-btn{
+        font-size: 16px;
+    }
+    .influencer-profile .add-btn img {
+        width: 2rem;
+    }
+    .influencer-profile{
+        margin-top: 1rem;
+    }
+    .influencer-profile .add-btn  .addIcon {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .influencer-profile .titles .title-name {
+        font-size: 15px;
+    }
+    .influencer-profile .titles .title-follower {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .influencer-profile .titles .title-follow {
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+    .influencer-profile .social img {
+        width: 1rem;
+    }
+    .influencer-profile .add-btn {
+        font-size: 14px;
+        margin-top: 1rem;
+        border-radius:5px;
+    }
+    .influencer-profile .images .influencer-explore {
+        top: 85px;
+        left: 33px;
+    }
+    .influencer-profile .add-btn img {
+        width: 1rem;
+    }
+    .influencer-profile {
+        margin-top: 1rem;
+    }
+    .influencer-profile .influencer-profile-des{
+        margin-top: 5rem;
+    }
+    .influencer-profile .images .influencer-img .girl {
+        height: 72%;
+    }
+    .influencer-profile .add-btn  .addIcon {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .influencer-profile{
+        height: 45vh;
+    }
+    .influencer-profile .titles{
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .influencer-profile{
+        height: 40vh;
+    }
+    .influencer-profile .add-btn {
+        font-size: 11px;
+        width: 29vw;
+    }
+    .influencer-profile .images .influencer-explore{
+        top: 115px;
+    }
+
+}

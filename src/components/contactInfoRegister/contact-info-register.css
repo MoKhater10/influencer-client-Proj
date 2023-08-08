@@ -1,0 +1,105 @@
+.contact-info-register{
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+.contact-info-register form .contact-info-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.contact-info-register form .contact-info-form .form-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.contact-info-register form .contact-info-form .form-sec label {
+    font-size: 20px;
+    font-weight: 500;
+}
+.contact-info-register form .contact-info-form  .form-sec input{
+    padding: .7rem;
+    width: 35vw;
+    border: 1px solid #C2C2C2;
+}
+.contact-info-register form .contact-info-form  .form-sec input::placeholder{
+    font-size: 16px;
+    font-weight: 300;
+}
+.register-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+.register-btns .btn-next,
+.register-btns .btn-back{
+    background-color: black;
+    color: white;
+    width: 30vw;
+    padding: 0.3rem;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.contact-info-register  .PhoneInputCountrySelect {
+    padding: .7rem;
+    width: 10vw;
+    border: 1px solid #CAC8C8;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ABABAB;
+}
+#toogle-direction{
+    direction: ltr;
+}
+
+@media only screen and (max-width: 992px) {
+    .contact-info-register form .contact-info-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .contact-info-register form .PhoneInput {
+        justify-content: flex-end;
+        width: 80vw;
+    }
+    .contact-info-register .PhoneInputCountrySelect{
+        width: 25vw;
+    }
+    .contact-info-register .register-btns{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .contact-info-register .register-btns .btn-next, .contact-info-register .register-btns .btn-back {
+        font-size: 15px;
+        width: 80vw;
+    }
+    .contact-info-register .register-btns .btn-next{
+        margin-bottom: 0;
+    }
+    .contact-info-register .register-btns .btn-back{
+        margin-top: 1rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .contact-info-register form .contact-info-form .form-sec input{
+        width: 80vw;
+    }
+    .contact-info-register form .contact-info-form .form-sec label {
+        font-size: 15px;
+    }
+    .contact-info-register .PhoneInputCountrySelect {
+        padding: 0.7rem;
+    }
+}

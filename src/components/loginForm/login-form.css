@@ -1,0 +1,113 @@
+.login-form-comp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+.login-form-comp .login-form-title{
+    display: grid;
+    gap: 1rem;
+}
+.login-form-comp .login-form-title h3{
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 39px;
+    margin: 0;
+}
+.login-form-comp .login-form-title h6{
+    font-size: 17px;
+    font-weight: 300;
+    width: 55%;
+    margin: auto;
+    color: #000000;
+    line-height: 43px;
+}
+.login-form-comp .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.login-form-comp .login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.login-form-comp .login-form form button{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.login-form-comp .login-form .form-sec{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+}
+.login-form-comp .login-form .form-sec label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.login-form-comp .login-form .form-sec input{
+    width: 25vw;
+    border: 1px solid #CAC8C8;
+    padding: .7rem;
+}
+.login-form-comp .login-form span{
+    font-size: 16px;
+}
+.login-form-comp .login-form span.create-account{
+    font-weight: 700;
+    color: #000000;
+    cursor: pointer;
+}
+.login-form-comp .login-form span.no-account{
+    font-weight: 500;
+    color: #929292;
+}
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .login-form-comp .login-form .form-sec input{
+        width: 40vw;
+        padding: .5rem 0.7rem;
+    }
+    .login-form-comp .login-form .form-sec input::placeholder{
+        font-size: 12px;
+    }
+    .login-form-comp .login-form .form-sec label {
+        font-size: 13px;
+    }
+    .login-form-comp .login-form-title h3 {
+        font-size: 20px;
+    }
+    .login-form-comp .login-form-title h6 {
+        line-height: 32px;
+        font-size: 14px;
+    }
+    .login-form-comp .login-form form button {
+        font-size: 14px;
+        height: 2.5rem;
+    }
+    .have-no-account{
+        margin-bottom: 7rem;
+    }
+    .login-form-comp .login-form span {
+        font-size: 15px;
+    }
+}
+
+
+
+

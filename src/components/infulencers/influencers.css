@@ -1,0 +1,133 @@
+.influencers{
+    display: grid;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+.influencers .influencers-title{
+    margin-top: 3rem;
+    width: fit-content;
+    background-color: var(--primaryColor);;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.influencers .influencers-title h1{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 56px;
+}
+.influencers .influencer-box .influeuncer-image{
+    width: 100%;
+}
+.influencers .all-influencers .influencer-img {
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.influencers .all-influencers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.influencers .all-influencers .influencer-box:hover .influencer-img{
+    filter: grayscale(0%);
+}
+.influencers .all-influencers .influencer-box .influencer-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    height: 4rem;
+    padding: 0 1rem;
+    border-radius: 0 0 15px 20px;
+}
+
+.influencers .all-influencers .influencer-box .influencer-info h2:first-of-type {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 33px;
+    margin: 0;
+}
+.influencers .all-influencers .influencer-box .influencer-info h2:last-of-type {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 33px;
+    margin: 0;
+}
+.influencers .all-influencers .influencer-box .influencer-info .plus {
+    margin-bottom:5px
+}
+.influencers .all-influencers .influencer-box .influencer-info .add {
+    color: black;
+    padding: 0px 8px;
+    font-size: 35px;
+    font-weight: 539px;
+    align-items: center;
+    background-color: var(--primaryColor);;
+    border: 8px solid white;
+    border-radius: 0px 14px 14px 14px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.btn-opacity {
+    opacity: .4;
+}
+.influencers .influencer-info .influencer-info-followers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+@media only screen and (max-width: 1200px) {
+    .influencers .all-influencers {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .influencers .all-influencers {
+        grid-template-columns: 1fr 1fr;
+    }
+    .influencers .influencers-title h1 {
+        font-size: 24px;
+    }
+    .influencers .all-influencers .influencer-box .influencer-info h2 {
+        font-size: 14px;
+
+    }
+}
+@media only screen and (max-width: 768px) {
+    .influencers .all-influencers{
+        grid-template-columns: 1fr;
+        align-items: center;
+        width: 65%;
+        margin: auto;
+    }
+    .influencers .all-influencers .influencer-box .influencer-info {
+        margin: auto;
+    }
+    .influencer-box{
+        text-align: center;
+    }
+    .influencers .influencers-title h1 {
+        font-size: 16px;
+        line-height: 12px;
+        margin: 0;
+    }
+    .influencers .all-influencers .influencer-box .influencer-info h2:first-of-type {
+        font-size: 14px;
+    }
+    .influencers .all-influencers .influencer-box .influencer-info h2:last-of-type{
+        font-size: 15px;
+    }
+}

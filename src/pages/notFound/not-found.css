@@ -1,0 +1,36 @@
+
+.not-found {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+.not-found .not-found-img{
+    width: 100%;
+}
+.not-found a {
+    background-color: black;
+    width: 30%;
+}
+.not-found button {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin: auto;
+    padding: 0.5rem 3rem;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    .not-found button{
+        padding: 0.5rem 1rem;
+        font-size: 10px;
+    }
+}

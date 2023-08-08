@@ -1,0 +1,91 @@
+.footer{
+    background-color: black;
+    padding: 3rem;
+    display: grid;
+    gap: 5rem;
+}
+.footer .footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+}
+.footer .footer-logo img {
+    width: 100%;
+}
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+.footer .footer-content .footer-description {
+    width: 43%;
+}
+.footer .footer-content .footer-description h1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.footer .footer-content .footer-contact{
+    direction: ltr;
+}
+.footer .footer-content .footer-contact h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    direction: ltr;
+}
+.footer .footer-content .footer-contact-info p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.footer .footer-content .footer-contact .footer-contact-social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+@media only screen and (max-width: 992px) {
+    .footer .footer-content .footer-description h1{
+        font-size: 13px;
+    }
+    .footer .footer-content .footer-contact h1{
+        font-size: 15px;
+        direction: ltr;
+    }
+    .footer .footer-content .footer-contact-info p{
+        font-size: 11px;
+    }
+    .footer .footer-content .footer-contact .footer-contact-social img {
+        width: 1.5rem;
+    }
+    .footer .footer-content{
+        gap: 4rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer .footer-content {
+        gap: 2rem;
+    }
+    .footer .footer-logo{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .footer .footer-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        direction:ltr;
+        gap: 2rem;
+    }
+    .footer .footer-content .footer-description{
+        width: 100%;
+    }
+}

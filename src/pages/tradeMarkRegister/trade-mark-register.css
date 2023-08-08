@@ -1,0 +1,184 @@
+.register-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    width: 45%;
+    margin: auto;
+}
+.register-logo .logo {
+    width: 100%;
+}
+hr{
+    width: 90%;
+    margin: auto;
+    color: black;
+}
+.register-title {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.register-title h3 {
+    font-size: 31px;
+    font-weight: 700;
+}
+.register-title h6 {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 29px;
+    width: 80%;
+    margin: auto;
+}
+.trade-mark-register .trade-mark-form  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.trade-mark-register .trade-mark-form .form-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.trade-mark-register .trade-mark-form .form-sec label {
+    font-size: 20px;
+    font-weight: 500;
+}
+.trade-mark-register .trade-mark-form  .form-sec input,
+.trade-mark-register .trade-mark-form  .form-sec .form-select {
+    padding: .7rem;
+    width: 35vw;
+    border: 1px solid #CAC8C8;
+}
+.trade-mark-register .trade-mark-form  .form-sec input::placeholder,
+.trade-mark-register .trade-mark-form  .form-sec .form-select::placeholder{
+    font-size: 16px;
+    font-weight: 300;
+    color: #ABABAB;
+}
+.trade-mark-register  input[type="tel"] ::placeholder{
+    direction: rtl;
+}
+.trade-mark-register  .button-register{
+    background-color: black;
+    color: white;
+    width: 50%;
+    padding: 0.3rem;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.trade-mark-register .PhoneInputCountrySelect {
+    padding: .7rem;
+    width: 10vw;
+    border: 1px solid #CAC8C8;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ABABAB;
+}
+
+.PhoneInputCountryIcon{
+    display: none;
+}
+.PhoneInput {
+    display: flex;
+    width: 35vw;
+    align-items: center;
+}
+.toogle-dir{
+    direction: ltr;
+}
+.css-13cymwt-control, .css-1nmdiq5-menu{
+    width: 35vw;
+    padding: 0.3rem;
+}
+.spanhint{
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.hintMsg {
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    font-size: 20px;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .register-title h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .register-title h6 {
+        font-size: 18px;
+    }
+    .influencer-register .circles .titles span{
+        font-size: 16px;
+    }
+    .register-logo{
+        height: 5rem;
+    }
+    .trade-mark-register .trade-mark-form .form-sec label {
+        font-size: 12px;
+    }
+    .trade-mark-register .trade-mark-form  .form-sec input::placeholder,
+    .trade-mark-register .trade-mark-form  .form-sec .form-select::placeholder{
+        font-size: 12px;
+    }
+    .trade-mark-register .trade-mark-form{
+        gap: 1rem;
+    }
+    .hintMsg {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .trade-mark-register .trade-mark-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .trade-mark-register .trade-mark-form .form-sec input, .trade-mark-register .trade-mark-form .form-sec .form-select{
+        padding: .5rem 0.4rem;
+    }
+    .trade-mark-register .trade-mark-form .form-sec{
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    .trade-mark-register .trade-mark-form{
+        margin-bottom: 0;
+    }
+    .trade-mark-register .trade-mark-form .form-sec input.input {
+        width: 80vw;
+    }
+    .trade-mark-register .trade-mark-form .form-sec input.PhoneInputInput {
+        width: 53vw;
+    }
+    .trade-mark-register .PhoneInput{
+        width: 80vw;
+    }
+    .trade-mark-register .PhoneInputCountrySelect{
+        width: 30vw;
+        padding: .5rem 0.7rem;
+    }
+    .css-b62m3t-container  .css-13cymwt-control {
+        width: 80vw;
+    }
+    .css-t3ipsp-control {
+        width: 80vw;
+    }
+}

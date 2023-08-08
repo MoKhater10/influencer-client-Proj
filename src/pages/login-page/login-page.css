@@ -1,0 +1,47 @@
+
+.login-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+.login-page .outlet{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.login-poster{
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 30rem;
+}
+.login-page .login-poster .logo{
+    width: 90%;
+}
+.login-page .login-poster .man{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* width: 60%; */
+    height: 70%;
+}
+@media only screen and (max-width: 1200px) {
+    .login-page .login-poster .man{
+        width: 700px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .login-page{
+        grid-template-columns: 1fr  ;
+    }
+    .login-poster{
+        display: none;
+    }
+    .login-form-comp .login-form .form-sec input{
+        width: 50vw;
+    }
+}

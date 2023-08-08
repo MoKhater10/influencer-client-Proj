@@ -1,0 +1,29 @@
+.no-influencer{
+    height: 70vh;
+}
+.no-influencer .noInfluencerImg {
+    width: 50%;
+    margin: auto;
+}
+.no-influencer .noInfluencerImg img{
+    width: 95%;
+    margin-top: 3rem;
+}
+@media only screen and (max-width: 992px) {
+    .no-influencer {
+        height: 60vh;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .no-influencer {
+        height: 60vh;
+    }
+    .no-influencer .noInfluencerImg {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .no-influencer {
+        height: 49vh;
+    }
+}

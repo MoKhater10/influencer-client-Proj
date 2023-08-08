@@ -1,0 +1,21 @@
+name: CD
+
+on:
+  push:
+    branches: ['main']
+  workflow_dispatch:
+
+jobs:
+  deployment:
+    runs-on: influencer
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build and Run Server
+        run: npm run build
+        env:
+          CI: ""

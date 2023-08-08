@@ -1,0 +1,76 @@
+.login-choose-comp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+.login-choose-comp .login-choose-title{
+    display:grid;
+    gap: 1rem;
+}
+.login-choose-comp .login-choose-title h3{
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.login-choose-comp .login-choose-title h6{
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 29px;    
+    width: 90%;
+    margin: auto;
+}
+.login-choose-comp .login-choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.login-choose-comp .login-choice .influencer{
+    padding: 3rem;
+    background-color: #252525;
+    color: white;
+    border: 1px solid black;
+    font-size: 31px;
+    font-weight: 600;   
+    cursor: pointer;
+}
+.login-choose-comp .login-choice .influencer:hover,
+.login-choose-comp .login-choice .trade-mark:hover {
+    background-color: white;
+    color: black;
+}
+.login-choose-comp .login-choice .trade-mark {
+    padding: 3rem;
+    background-color: #252525;
+    color: white;
+    font-size: 31px;
+    font-weight: 800;
+    cursor: pointer;
+    border: 1px solid black;
+}
+@media only screen and (max-width: 992px) {
+    .login-choose-comp .login-choose-title h3 {
+        font-size: 19px;    
+    }
+    .login-choose-comp .login-choose-title h6 {
+        font-size: 18px;
+        width: 75%;
+    }
+    .login-choose-comp .login-choice .influencer {
+        padding: 3rem ;
+        font-size: 20px;
+    }
+    .login-choose-comp .login-choice .trade-mark {
+        padding: 3rem 1.2rem;
+        font-size: 20px;
+    }
+    .login-choose-comp .login-choice {
+        gap: 2rem;
+        margin-bottom: 6rem;
+    }
+}
+
+

@@ -1,0 +1,100 @@
+.profile-info-register .influencer-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.profile-info-register .influencer-form .form-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.profile-info-register .influencer-form .form-sec label {
+    font-size: 20px;
+    font-weight: 500;
+}
+.profile-info-register .influencer-form  .form-sec input,
+.profile-info-register .influencer-form  .form-sec select,
+.profile-info-register .influencer-form textarea {
+    padding: 0.7rem 1rem;
+    width: 30vw;
+    border: 1px solid #C2C2C2;
+}
+.profile-info-register .influencer-form  .form-sec select {
+    cursor: pointer;
+}
+.profile-info-register .influencer-form textarea{
+    height: 10rem;
+}
+.profile-info-register .influencer-form  .form-sec input::placeholder,
+.profile-info-register .influencer-form .form-sec select::placeholder{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.profile-info-register .influencer-form  .form-sec input[type="file"]{
+    border: 1px solid #C2C2C2;
+    color: transparent;
+    padding: .3rem;
+}
+.profile-info-register  .btn-next{
+    background-color: black;
+    color: white;
+    width: 50%;
+    padding: 0.3rem;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.selected {
+    background-color: grey;
+}
+.notSelected {
+    background-color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    .profile-info-register .influencer-form .form-sec label{
+        font-size: 15px;
+    }
+    .profile-info-register .btn-next{
+        margin-bottom: 8rem;
+        margin-top: -2rem;
+    }
+    .profile-info-register .influencer-form  .form-sec input::placeholder,
+    .profile-info-register .influencer-form .form-sec select::placeholder{
+        font-size: 12px;
+    }
+    .profile-info-register .btn-next{
+        font-size: 15px;
+    }
+    .notSelected,.selected {
+        background-color: white;
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .profile-info-register .influencer-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-info-register .influencer-form .form-sec input,
+    .profile-info-register .influencer-form .form-sec select,
+    .profile-info-register .influencer-form textarea {
+        width: 80vw;
+    }
+    .profile-info-register .influencer-form .form-sec{
+        gap: .5rem;
+    }
+    .profile-info-register .btn-next{
+        width: 80vw;
+    }
+}

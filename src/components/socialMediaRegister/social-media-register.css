@@ -1,0 +1,109 @@
+.social-media-register form .social-media-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.social-media-register form .social-media-form .form-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.social-media-register form .social-media-form .form-sec label {
+    font-size: 20px;
+    font-weight: 500;
+}
+.social-media-register form .social-media-form  .form-sec .input{
+    padding: .7rem;
+    width: 35vw;
+    border: 1px solid #C2C2C2;
+}
+.contact-info-register form .social-media-form  .form-sec input::placeholder{
+    font-size: 16px;
+    font-weight: 300;
+}
+.social-media-register form .social-media-form  .form-sec .account{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+.social-media-register form .social-media-form .form-sec .account img {
+    width: 26px;
+    height: 26px;
+}
+.social-media-register form .followers{
+    display: flex;
+}
+.social-media-register form .followers select {
+    background: #dddcdcba;
+    height: 3rem;
+    width: 39px;
+}
+.social-media-register form .followers select option {
+    text-align: center;
+}
+.followers{
+    width: 35vw;
+}
+.input-follower{
+    padding: .7rem;
+    width: 90%;
+    border: 1px solid #C2C2C2;
+}
+
+@media only screen and (max-width: 992px) {
+    .social-media-register form .social-media-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-media-register form .social-media-form .form-sec label{
+        font-size: 13px;
+    } 
+    .social-media-register form .social-media-form{
+        grid-template-columns: 1fr;
+    }
+    .social-media-register {
+        display: flex;
+        justify-content: center;
+    }
+    .social-media-register form .social-media-form .form-sec .input,.followers{
+        width: 80vw;
+    }
+    .social-media-register form .social-media-form  .form-sec input::placeholder{
+        font-size: 12px;
+    }
+    .register-btns .btn-next, .register-btns .btn-back{
+        font-size: 12px;
+    }
+    .social-media-register form .social-media-form .form-sec {
+        align-items: flex-start;
+    }
+    .social-media-register  .register-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .social-media-register  .register-btns .btn-next {
+        width: 80vw;
+        margin: 0;
+        font-size: 15px;
+    }
+    .social-media-register  .register-btns .btn-back {
+        width: 80vw;
+        font-size: 15px;
+    }
+    .social-media-register  .register-btns .btn-back {
+        margin-top: 1rem;
+        font-size: 15px;
+    }
+    .social-media-register form .social-media-form{
+        margin-bottom: 2rem;
+    }
+    .social-media-register form .followers select {
+        width: 50px;
+    }
+}

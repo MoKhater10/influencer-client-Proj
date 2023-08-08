@@ -1,0 +1,165 @@
+.header-parent {
+    background-color: white;
+   
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left;
+    position: relative;
+}
+
+.header-parent .header {
+    display: flex;
+}
+.header-title-parent {
+    margin-top: 4rem;
+}
+.header-parent .header .man {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    height: 100%;
+}
+.header-parent .header .header-title {
+    display: grid;
+    gap: 6rem;
+}
+.header-parent .header .header-title h1:first-of-type {
+    background-color: var(--primaryColor);
+    width: fit-content;
+    padding: 1rem;
+    font-size: 67px;
+    font-weight: 600;
+    line-height: 94px;
+}
+.header-parent .header .header-title h1:last-of-type {
+    font-size: 67px;
+    font-weight: 600;
+    line-height: 94px;
+    letter-spacing: 0.01em;
+    text-align: right;
+}
+.header-tape {
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 20%;
+    gap: 5rem;
+}
+.header-tape .logo-tape {
+    width: 100%;
+}
+.parent-tape {
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header .header-images {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+.header .header-images .down-arrow {
+    color: var(--primaryColor);
+    position: absolute;
+    top: 53px;
+    right: 66px;
+    animation-name: animate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    font-size: 59px;
+}
+@keyframes animate {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes animate-mobile {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .header-parent .header .header-title h1:first-of-type,
+    .header-parent .header .header-title h1:last-of-type {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .header-parent .header .header-title {
+        gap: 2rem;
+    }
+    .header .header-images {
+        width: 60%;
+    }
+    .header-title .explore {
+        width: 100%;
+    }
+    .header .header-images .down-arrow {
+        right: 40px;
+        font-size: 33px;
+        top: 41px;
+    }
+    .header .header-images .down-arrow {
+        animation-name: animate-mobile;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header-parent .header .header-title h1:first-of-type {
+        padding: 0.5rem;
+        line-height: 36px;
+    }
+    .header-parent .header .header-title h1:first-of-type,
+    .header-parent .header .header-title h1:last-of-type {
+        font-size: 20px;
+    }
+
+    .header-tape {
+        height: 65px;
+    }
+    .header-parent {
+        margin-top: -1rem;
+    }
+    .header-parent {
+        background-size: cover;
+        background-position: top;
+    }
+    .header .header-images {
+        width: 40%;
+    }
+    .header .header-images .down-arrow {
+        top: 26px;
+        right: 30px;
+        font-size: 18px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .header-parent .header .man {
+        width: 315px;
+        height: 70%;
+    }
+    }
+    @media only screen and (max-width: 280px) {
+    .header-parent .header .man {
+        width: 230px;
+        height: 55%;
+    }
+}

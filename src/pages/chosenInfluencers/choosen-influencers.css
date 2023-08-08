@@ -1,0 +1,153 @@
+.choosen-influencers{
+    width: 100%;
+    margin-bottom: 3rem;
+    width: 80%;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: auto;
+    margin-bottom: 6rem;
+    margin-top: 3rem;
+}
+.choosen-influencers .influencer-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+    cursor: pointer;
+}
+.choosen-influencers .influencer-box .influeuncer-image{
+    width: 100%;
+}
+.choosen-influencers .influencer-box:hover  .influencer-img{
+    filter: grayscale(0%);
+}
+.choosen-influencers .influencer-box .influencer-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    height: 4rem;
+    padding: 0 1rem;
+    border-radius: 0 0 15px 20px;
+}
+.choosen-influencers .influencer-box .influencer-info h2 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 33px;
+    margin: 0;
+}
+.choosen-influencers .influencer-box .influencer-info .add {
+    background-color: #C5F60D;
+    border: 8px solid white;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    border-radius: 0px 11px 11px 15px;
+    cursor: pointer;
+    text-align: center;
+    padding: 3px 8px;
+    font-size: 30px;
+}
+.popup-delete-influencer {
+    position: fixed;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 4rem;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 250px;
+    z-index: 10000;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.popup-delete-influencer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.popup-delete-influencer-title {
+    font-size: 21px;
+    font-weight: 600;
+}
+.popup-delete-influencer-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.popup-delete-influencer-btns button {
+    background-color: black;
+    color: white;
+    width: 10vw;
+    padding: 0.3rem;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .choosen-influencers{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .choosen-influencers{
+        grid-template-columns: 1fr 1fr;
+    }
+    .choosen-influencers .influencer-box .influencer-info h2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .choosen-influencers .influencer-box .influencer-info{
+        height: 4rem;
+    }
+    .popup-delete-influencer-title {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .popup-delete-influencer-btns button {
+        font-size: 14px;
+        width: 14vw;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .choosen-influencers {
+        grid-template-columns: 1fr;
+        align-items: center;
+        grid-template-columns: 1fr;
+        align-items: center;
+        width: 65%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .choosen-influencers  .influencer-box .influencer-info {
+        margin: auto;
+    }
+    .choosen-influencers  .influencer-box{
+        text-align: center;
+    }
+    .popup-delete-influencer {
+        width: 300px;
+        height: 165px;
+    }
+    .choosen-influencers .no-button button {
+        padding: 0.5rem 1rem;
+        font-size: 10px;
+    }
+    .popup-delete-influencer{
+        border-radius: .5rem;
+        border: 2px solid black;
+    }
+} 
+
